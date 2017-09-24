@@ -1,0 +1,23 @@
+{
+  "name": "mymd",
+  "version": "0.0.1",
+  "description": "A markdown editor built with Electron and React",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scarletrunner7000/mymd.git"
+  },
+  "keywords": [
+    "markdown",
+    "electron",
+    "react"
+  ],
+  "author": "Yuichi Inagaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scarletrunner7000/mymd/issues"
+  },
+  "homepage": "https://github.com/scarletrunner7000/mymd#readme"
+}
