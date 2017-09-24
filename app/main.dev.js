@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+
 /**
  * This module executes inside of electron's main process. You can start
  * electron renderer process from here and communicate with the other processes
@@ -8,6 +10,7 @@
  *
  * @flow
  */
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { app, BrowserWindow } from 'electron';
 import MenuBuilder from './menu';
 
@@ -26,15 +29,17 @@ if (process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true')
 }
 
 const installExtensions = async () => {
+  // eslint-disable-next-line import/no-extraneous-dependencies
   const installer = require('electron-devtools-installer');
   const forceDownload = !!process.env.UPGRADE_EXTENSIONS;
   const extensions = [
     'REACT_DEVELOPER_TOOLS',
-    'REDUX_DEVTOOLS'
+    'REDUX_DEVTOOLS',
   ];
 
   return Promise
     .all(extensions.map(name => installer.default(installer[name], forceDownload)))
+    // eslint-disable-next-line no-console
     .catch(console.log);
 };
 
@@ -60,7 +65,7 @@ app.on('ready', async () => {
   mainWindow = new BrowserWindow({
     show: false,
     width: 1024,
-    height: 728
+    height: 728,
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);

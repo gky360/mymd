@@ -2,6 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { createHashHistory } from 'history';
 import { routerMiddleware, routerActions } from 'react-router-redux';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { createLogger } from 'redux-logger';
 import rootReducer from '../reducers';
 
@@ -18,7 +19,7 @@ const configureStore = (initialState) => {
   // Logging Middleware
   const logger = createLogger({
     level: 'info',
-    collapsed: true
+    collapsed: true,
   });
   middleware.push(logger);
 
@@ -49,7 +50,7 @@ const configureStore = (initialState) => {
 
   if (module.hot) {
     module.hot.accept('../reducers', () =>
-      store.replaceReducer(require('../reducers')) // eslint-disable-line global-require
+      store.replaceReducer(require('../reducers')), // eslint-disable-line global-require
     );
   }
 
