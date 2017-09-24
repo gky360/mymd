@@ -76,7 +76,11 @@
     "electron",
     "react"
   ],
-  "author": "Yuichi Inagaki",
+  "author": {
+    "name": "Yuichi Inagaki",
+    "email": "scarletrunner7000@gmail.com",
+    "url": "https://github.com/scarletrunner7000"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/scarletrunner7000/mymd/issues"
@@ -120,7 +124,7 @@
     "concurrently": "^3.5.0",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
-    "electron": "^1.7.8",
+    "electron": "1.7.7",
     "electron-builder": "^19.30.1",
     "electron-devtools-installer": "^2.2.0",
     "eslint": "^4.7.2",
@@ -143,9 +147,6 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "stylefmt": "^6.0.0",
-    "stylelint": "^8.1.1",
-    "stylelint-config-standard": "^17.0.0",
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",

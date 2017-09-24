@@ -7,7 +7,11 @@
   "scripts": {
     "postinstall": "npm rebuild --runtime=electron --target=1.7 --disturl=https://atom.io/download/atom-shell --build-from-source"
   },
-  "author": "Yuichi Inagaki",
+  "author": {
+    "name": "Yuichi Inagaki",
+    "email": "scarletrunner7000@gmail.com",
+    "url": "https://github.com/scarletrunner7000"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {}
