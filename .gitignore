@@ -1,3 +1,35 @@
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+.eslintcache
+
+# Dependency directory
+app/node_modules
+
+# OSX
+.DS_Store
+
+# flow-typed
+flow-typed/npm/*
+!flow-typed/npm/module_vx.x.x.js
+
+# App packaged
+release
+app/main.prod.js
+app/main.prod.js.map
+app/renderer.prod.js
+app/renderer.prod.js.map
+app/style.css
+app/style.css.map
+dist
+dll
+main.js
+main.js.map
+
+.idea
+
+
+
+### https://raw.github.com/github/gitignore/7792e50daeaa6c07460484704671d1dc9f0045a7/Node.gitignore
+
 # Logs
 logs
 *.log
@@ -29,7 +61,7 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
+# Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
@@ -56,4 +88,6 @@ typings/
 
 # dotenv environment variables file
 .env
+
+
 
