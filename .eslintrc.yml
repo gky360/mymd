@@ -18,6 +18,18 @@ env:
   node: true
 
 rules:
+  import/no-extraneous-dependencies:
+    - error
+    - packageDir: ./
+  react/sort-comp:
+    - error
+    - order:
+      - type-annotations
+      - static-methods
+      - lifecycle
+      - everything-else
+      - render
+
   no-mixed-operators:
     - error
     - groups: [["&", "|", "^", "~", "<<", ">>", ">>>"], ["&&", "||"]]

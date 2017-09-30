@@ -1,8 +1,8 @@
 // @flow
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Home.css';
 
+/* eslint-disable react/prefer-stateless-function */
 export default class Home extends Component<{}> {
   render() {
     return (
