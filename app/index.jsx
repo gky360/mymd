@@ -5,7 +5,6 @@ import Root from './containers/Root';
 import { configureStore, history } from './store/configureStore';
 import './app.global.css';
 
-console.log(configureStore, history);
 const store = configureStore();
 
 render(
