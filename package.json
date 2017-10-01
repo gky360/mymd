@@ -118,6 +118,7 @@
     "devtron": "^1.4.0",
     "electron-debug": "^1.4.0",
     "history": "^4.7.2",
+    "material-ui": "^1.0.0-beta.12",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-hot-loader": "^3.0.0-beta.7",
